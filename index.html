@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casino Future | Рейтинг 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#0b0f1c', // Deep dark blue
+              secondary: '#1a1f33', // Lighter dark blue
+              'accent-purple': '#a678ff',
+              'accent-green': '#4aff9e',
+              'accent-gold': '#ffcc00',
+              'accent-pink': '#ff66b2',
+              'accent-cyan': '#00c8ff',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(30px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background: linear-gradient(135deg, #0b0f1c 0%, #1a1f33 100%);
+        color: #e0e0ff;
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+      
+      /* Animated background particles */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" opacity="0.1"><circle cx="30" cy="30" r="4" fill="%23a678ff"/><circle cx="170" cy="80" r="6" fill="%234aff9e"/><circle cx="90" cy="170" r="5" fill="%2300c8ff"/><circle cx="140" cy="40" r="3" fill="%23ffcc00"/><circle cx="10" cy="150" r="7" fill="%23ff66b2"/></svg>');
+        pointer-events: none;
+        z-index: 0;
+        animation: floatStars 30s infinite linear;
+      }
+
+      @keyframes floatStars {
+        0% { transform: translateY(0) translateX(0); }
+        50% { transform: translateY(-20px) translateX(10px); }
+        100% { transform: translateY(0) translateX(0); }
+      }
+
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0b0f1c;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #a678ff;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #8255ee;
+      }
+      
+      .glass-card {
+        background: rgba(20, 25, 45, 0.7);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(166, 120, 255, 0.3);
+      }
+      
+      .text-gradient {
+        background: linear-gradient(45deg, #a678ff, #4aff9e);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
